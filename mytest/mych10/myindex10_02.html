@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container p {
+        color: blue;
+      }
+      .container > p {
+        font-weight: bold;
+      }
+      h2 + p {
+        background-color: yellow;
+      }
+      h2 ~ p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>컨테이너 제목</h3>
+      <p>컨테이너 문단1</p>
+      <span>
+        <p>중첩된 문단</p>
+      </span>
+    </div>
+
+    <h2>주요 제목</h2>
+    <p>문단 A</p>
+    <p>문단 B</p>
+    <div>다른 박스</div>
+    <p>문단</p>
+  </body>
+</html>
